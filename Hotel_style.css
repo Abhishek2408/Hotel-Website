@@ -83,8 +83,7 @@ body {
 }
 
 #destination,
-#check-in,
-#check-out,
+#available-date,
 #adults,
 #children {
   border-radius: 10px;
