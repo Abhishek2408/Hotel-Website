@@ -34,45 +34,61 @@ const hotelBlock = (hotel, id) => {
                 </div>
               </div>`;
 };
-
 hotels.map((hotel, id) => {
   hotelBlock(hotel, id);
 });
 
-document.getElementById("top-filter-form").addEventListener("submit", (e) => {
-  e.preventDefault();
+function filters_hotels() {
   filters.destination = document
     .getElementById("destination")
     .value.toLowerCase();
-  
-  filters.availableOn = document
-  .getElementById("available-date")
-  .value;
-  console.log(filters.availableOn)
+
+  filters.availableOn = document.getElementById("available-date").value;
 
   filteredHotels = hotels.filter((hotel) => {
-    let filter_1 =false
-    let filter_2 =false
-    if (filters.destination ==""||filters.destination ==" "||(hotel.location === filters.destination)) {
+    let filter_1 = false;
+    let filter_2 = false;
+    let filter_3 = false;
+    if (
+      filters.destination == "" ||
+      filters.destination == " " ||
+      hotel.location === filters.destination
+    ) {
       filter_1 = true;
     }
-    let date_1 = new Date(filters.availableOn)
-    let date_2 = new  Date(hotel.dates)
-    console.log("date_1"+ date_1);
-    console.log("date_2"+ date_2);
-    if (filters.availableOn&&(date_1 > date_2)){
-      
-      filter_2 =  true;
+    let date_1 = new Date(filters.availableOn).getDate();
+    let date_2 = new Date(hotel.dates).getDate();
+    console.log(date_1, date_2, hotel.name)
+    if (filters.availableOn) {
+      if (date_1 === date_2) {
+        filter_2 = true;
+      } else {
+        filter_2 = false;
+      }
+    } else {
+      filter_2 = true;
     }
-    if(filters.availableOn){
-      return filter_1&&filter_2;
-    }
-    else{
-      return filter_1
-    }
-    // return filter_1&&filter_2;
-  });
 
+    if (filters.stars.length != 0) {
+      if (filters.stars.includes(hotel.star)) {
+        filter_3 = true;
+      } else {
+        filter_3 = false;
+      }
+    } else {
+      filter_3 = true;
+    }
+    // if(filters.stars.length!=0){
+    //   return filter_1&&filter_3
+    // }
+    // else if(filters.availableOn){
+    //   return filter_1&&filter_2;
+    // }
+    // else{
+    //   return filter_1
+    // }
+    return filter_1 && filter_2 && filter_3;
+  });
   document.getElementById("display-hotels").innerHTML = "";
 
   if (filteredHotels.length !== 0) {
@@ -83,4 +99,34 @@ document.getElementById("top-filter-form").addEventListener("submit", (e) => {
     document.getElementById("display-hotels").innerHTML =
       " <h3>no hotels found for the mentioned destination</h3>";
   }
+}
+
+document.getElementById("top-filter-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  filters_hotels();
 });
+
+for (i = 1; i <= 5; i++) {
+  $("#star-cont").append(`<div>
+                  <label>
+                    <input id="star-${i}" value="${i}" type="checkbox" name="" /><span class="list">
+                      ${i} Star</span
+                    >
+                  </label>
+                </div>`);
+  $(`#star-${i}`).click((e) => {
+    if (e.target.checked) {
+      filters.stars.push(e.target.value);
+    } else {
+      filters.stars = filters.stars.filter((stars) => {
+        if (stars == e.target.value) {
+          return false;
+        }
+        return true;
+      });
+    }
+    filters_hotels()
+  });
+}
+
+

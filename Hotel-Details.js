@@ -36,12 +36,45 @@ $("#booking_details").html(`<div class="text-start">
                                         <i class="fas fa-check"></i><span>Room only</span>
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn-yellow px-5 py-2 main-btn">Book This Now</a>
+                                <a href="./hotel-review.html?hotel=${hotelId}" class="btn btn-yellow px-5 py-2 main-btn">Book This Now</a>
                             </div>
                             <div class="price-section">
                                 <p><span>per night </span>
                                     <br>
                                 <h3>₹ ${hotels[hotelId].price}</h3><span>+ ₹803 taxes & fees</span></p>
                             </div>`)
-
+                            
 $(".iframe_location").attr(`src`,hotels[hotelId].location_url);
+
+$("#page2-form").html(`<div class="input-group">
+                            <label for="destination" class="input-label">Destination</label>
+                            <input type="text" class="input" id="destination" placeholder="City/Area/State" value="${hotels[hotelId].location}">
+                        </div>
+                        <div class="input-group">
+                            <label for="available-date" class="input-label">Available Date</label>
+                            <input type="date" class="input" id="available-date" value="${hotels[hotelId].date}" />
+                        </div>
+                        <div class="input-group">
+                            <label for="adults" class="input-label">Adults</label>
+                            <select class="options" id="adults">
+                                <option value="0" selected>0</option>
+                                <option value="0">1</option>
+                                <option value="0">2</option>
+                                <option value="0">3</option>
+                                <option value="0">4</option>
+                                <option value="0">5</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="children" class="input-label">Children</label>
+                            <select class="options" id="children">
+                                <option value="0" selected>0</option>
+                                <option value="0">1</option>
+                                <option value="0">2</option>
+                                <option value="0">3</option>
+                                <option value="0">4</option>
+                                <option value="0">5</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-cust form-btn btn-brown">Search
+                        </button>`)

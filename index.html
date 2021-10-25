@@ -28,18 +28,25 @@
           <div class="col my-col">
             <form action="" class="bk-form" id="top-filter-form">
               <div class="input-group">
-                <label for="destination" class="input-label">Destination</label>
+                <label for="destination" class="input-label" >Destination</label>
                 <input
                   type="text"
                   class="input"
                   id="destination"
                   placeholder="City/Area/State"
+                  list="destination_list"
                 />
+                <datalist id="destination_list">
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Hydrabad">Hydrabad</option>
+                </datalist>
               </div>
               <div class="input-group">
                 <label for="available-date" class="input-label">Available Date</label>
                 <input type="date" class="input" id="available-date" />
               </div>
+              
               <div class="input-group">
                 <label for="adults" class="input-label">Adults</label>
                 <select class="options" id="adults">
@@ -155,217 +162,10 @@
                   </label>
                 </div>
               </div>
-              <h3 class="pop-filter">Locality</h3>
-              <div class="sub-container">
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      North Goa</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      South Goa</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Calanguate</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Baga</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Candolim</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Anjuna</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Margoa</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Varca</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Agonda</span
-                    >
-                  </label>
-                </div>
-              </div>
-              <h3>Star Category</h3>
-              <div class="sub-container">
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      5 Star</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      4 Star</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      3 Star</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      2 Star</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      1 Star</span
-                    >
-                  </label>
-                </div>
-              </div>
-              <h3 class="pop-filter">Property Type</h3>
-              <div class="sub-container">
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Hotel</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Apartment</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Homestay</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Resort</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Villa</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Guest House</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Cottage</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Bnb</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Hostel</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Apart hotel</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Holiday home</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Beach Hut</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Farm House</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Camp</span
-                    >
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="checkbox" name="" /><span class="list">
-                      Lodge</span
-                    >
-                  </label>
-                </div>
+              <h3 class="pop-filter">Rating</h3>
+              <div class="sub-container" id="star-cont">
+
+                
               </div>
             </section>
           </div>
