@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 *,
 *::before,
 *::after {
@@ -44,7 +44,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   text-transform: capitalize;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Poppins", Times, serif;
   padding: 0.5rem 3.5rem;
   border: none;
   border-radius: 30px;
@@ -62,7 +62,7 @@ body {
   display: block;
   font-size: 1.2rem;
   text-transform: uppercase;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Poppins", Times, serif;
   color: black;
   margin: 10px;
   font-weight: bold;
@@ -121,7 +121,8 @@ body {
   display: block;
   font-size: 4rem;
   text-transform: capitalize;
-  font-family: "Besley", serif;
+  font-family: "Poppins", serif;
+  font-weight: bold;
 }
 .sub-heading {
   font-size: 1.7rem;
@@ -154,6 +155,7 @@ body {
   flex-direction: row;
   align-items: flex-start;
   justify-content: inherit;
+  background-color: #fff;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) -1px 9px 40px -12px,
     rgba(0, 0, 0, 0.75) 0px 2px 4px -1px;
@@ -331,6 +333,7 @@ ul li label input:checked ~ .list:before {
   margin-left: 5px;
   margin-right: 20px;
   margin-bottom: 25px;
+  background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.1) -1px 9px 40px -12px,
     rgba(0, 0, 0, 0.75) 0px 2px 4px -1px;
   border-radius: 10px;
@@ -455,6 +458,7 @@ ul li label input:checked ~ .list:before {
     right: 0;
   }
   .main-content {
+    background-color: #a5a5a5;
     margin-top: 100px;
   }
   .bk-form {

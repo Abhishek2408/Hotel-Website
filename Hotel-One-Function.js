@@ -28,7 +28,7 @@ const hotelBlock = (hotel, id) => {
                     <i class="fas fa-star rating"></i>
                     <i class="fas fa-star-half rating"></i>
                   </div>
-                  <a href="./Hotel1.html?hotel=${id}" class="btn-rooms-btn"
+                  <a href="./Hotel1.html?hotel=${hotel.id}" class="btn-rooms-btn"
                     >Book Now &rarr;</a
                   >
                 </div>

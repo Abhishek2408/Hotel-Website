@@ -1,5 +1,6 @@
 const hotels = [
   {
+    id:1,
     name: "ITC Maratha",
     price: 4104,
     details:
@@ -17,6 +18,7 @@ const hotels = [
     ],
   },
   {
+    id:2,
     name: "The Oberoi",
     price: 12107,
     details:
@@ -34,6 +36,7 @@ const hotels = [
     ],
   },
   {
+    id:3,
     name: "Trident Bandra",
     price: 5730,
     details:
@@ -50,7 +53,8 @@ const hotels = [
       "./Images/hotel3/image3.jpg",
     ],
   },
-  {
+  { 
+    id:4,
     name: "Taj , Santacruz",
     price: 5787,
     details:
@@ -67,7 +71,8 @@ const hotels = [
       "./Images/hotel4/image3.jpg",
     ],
   },
-  {
+  { 
+    id:5,
     name: "Sofitel Mumbai",
     price: 3920,
     details:
@@ -84,7 +89,8 @@ const hotels = [
       "./Images/hotel5/image3.jpg",
     ],
   },
-  {
+  { 
+    id:6,
     name: "ITC Grand Central",
     price: 5656,
     details:
@@ -101,7 +107,8 @@ const hotels = [
       "./Images/hotel6/image3.jpg",
     ],
   },
-  {
+  { 
+    id:7,
     name: "Trident Nariman Point",
     price: 6582,
     details:
@@ -118,7 +125,8 @@ const hotels = [
       "./Images/hotel7/image3.jpg",
     ],
   },
-  {
+  { 
+    id:8,
     name: "Taj Lands End",
     price: 6954,
     details:
@@ -135,7 +143,8 @@ const hotels = [
       "./Images/hotel8/image3.jpg",
     ],
   },
-  {
+  { 
+    id:9,
     name: "Novetel ",
     price: 3696,
     details:
@@ -150,7 +159,7 @@ const hotels = [
       "./Images/hotel9/image1.jpg",
       "./Images/hotel9/image2.jpg",
       "./Images/hotel9/image3.jpg",
-    ],
+    ],    
   },
 ];
 

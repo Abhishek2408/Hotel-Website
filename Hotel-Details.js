@@ -41,7 +41,7 @@ $("#booking_details").html(`<div class="text-start">
                             <div class="price-section">
                                 <p><span>per night </span>
                                     <br>
-                                <h3>₹ ${hotels[hotelId].price}</h3><span>+ ₹803 taxes & fees</span></p>
+                                <h3>₹ ${hotels[hotelId].price}</h3><span>+ ₹ 0 taxes & fees</span></p>
                             </div>`)
                             
 $(".iframe_location").attr(`src`,hotels[hotelId].location_url);
@@ -52,7 +52,7 @@ $("#page2-form").html(`<div class="input-group">
                         </div>
                         <div class="input-group">
                             <label for="available-date" class="input-label">Available Date</label>
-                            <input type="date" class="input" id="available-date" value="${hotels[hotelId].date}" />
+                            <input type="date" class="input" id="available-date" value="${hotels[hotelId].dates}" />
                         </div>
                         <div class="input-group">
                             <label for="adults" class="input-label">Adults</label>

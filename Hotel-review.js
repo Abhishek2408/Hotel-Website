@@ -24,16 +24,7 @@ $("#htlInfo__wrapper").html(`<div class="htlInfo__dtl">
                                 <div class="chkCont__col">
                                     <div class="makeFlex column"><span class="font10 grayText appendBottom3">CHECK
                                             IN</span><span class="latoBlack font24 blackText appendBottom3">${hotels[hotelId].dates}
-                                            </span><span class="font10 grayText 444">Sunday, 12 PM</span></div>
-                                    <div class="chkCont__night"><span>1 Night</span></div>
-                                    <div class="makeFlex column"><span class="font10 grayText appendBottom3">CHECK
-                                            OUT</span><span class="latoBlack font24 blackText appendBottom3">25 Oct
-                                            2021</span><span class="font10 grayText">Monday, 12 PM</span></div>
-                                </div>
-                                <div class="chkCont__col">
-                                    <p class="font16 blackText"><span class="latoBlack">2</span>&nbsp;Adults&nbsp;|
-                                        <span>2 Beds</span>
-                                    </p>
+                                            </span></div>
                                 </div>
                             </div>`)
 $("#price_section").html(`<div class="prcBreakup appendBottom30">
@@ -58,7 +49,7 @@ $("#price_section").html(`<div class="prcBreakup appendBottom30">
                                             <p class="latoBold blackText">Net Price</p>
                                         </div>
                                         <div class="prcBreakup__rht">
-                                            <p class="latoBold">₹ 1,098</p>
+                                            <p class="latoBold">₹ 0</p>
                                         </div>
                                     </div>
                                 </div>
@@ -68,7 +59,7 @@ $("#price_section").html(`<div class="prcBreakup appendBottom30">
                                             <div class="latoBold blackText makeFlex hrtlCenter">Service Fees</div>
                                         </div>
                                         <div class="prcBreakup__rht">
-                                            <p class="latoBold">₹ 105</p>
+                                            <p class="latoBold">₹ 0</p>
                                         </div>
                                     </div>
                                 </div>

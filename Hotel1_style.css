@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 *,
 *::before,
 *::after {
@@ -44,7 +44,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   text-transform: capitalize;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Poppins", Times, serif;
   padding: 0.5rem 3.5rem;
   border: none;
   border-radius: 30px;
@@ -62,7 +62,7 @@ body {
   display: block;
   font-size: 1.2rem;
   text-transform: uppercase;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Poppins", Times, serif;
   color: black;
   margin: 10px;
   font-weight: bold;
@@ -83,8 +83,7 @@ body {
 }
 
 #destination,
-#check-in,
-#check-out,
+#available-date,
 #adults,
 #children {
   border-radius: 10px;
